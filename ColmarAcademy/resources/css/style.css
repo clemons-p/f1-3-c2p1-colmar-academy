@@ -1,0 +1,767 @@
+/* universal styles */
+
+html {
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  margin: 0;
+}
+
+/* header section */
+
+/* desktop */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 3.55rem;
+  width: 100%;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  border-bottom: 1px solid #ccc;
+}
+
+header .logo img {
+  padding-left: 1.3rem;
+  padding-top: 0.75rem;
+  height: 2rem;
+}
+
+header .logo p {
+  display: inline;
+  position: relative;
+  bottom: 0.75rem;
+  color: #333;
+  font-weight: 300;
+}
+
+header .logo span {
+  color: #444;
+  font-weight: 700;
+}
+
+header nav {
+  padding-right: 1.3rem;
+  padding-top: 1.15rem;
+}
+
+header nav a {
+  padding-left: 0.8rem;
+  text-decoration: none;
+  color: #444;
+  font-size: 0.8rem;
+}
+
+header nav a:hover {
+  color: #DC0000;
+  transition: color 1s;
+}
+
+/* mobile */
+
+@media only screen and (max-width: 480px) {
+
+  header .logo p,
+  header .logo span,
+  header nav, 
+  header nav a {
+    display: none;
+  }
+  
+  header .on-campus img,
+  header .online img,
+  header .login img {
+    height: 2rem;
+    padding-top: 0.75rem;
+  }
+  
+  header .logo img,
+  header .on-campus img,
+  header .online img,
+  header .login img {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  
+  header .on-campus img:active,
+  header .online img:active,
+  header .login img:active {
+    opacity: 0.3;
+  }
+
+}
+
+@media only screen and (min-width: 480px) {
+
+  header .on-campus img,
+  header .online img,
+  header .login img {
+    display: none;
+  }
+
+}
+
+/* banner section */
+
+/* desktop */
+
+.banner {
+  background-color: #ddd;
+  display: flex;
+  align-items: center;
+}
+
+.banner .image-container {
+  margin: 5.25rem 1.3rem 1.7rem 1.3rem;
+}
+
+.banner .image-container img {
+  width: 36.7rem;
+}
+
+.banner .start-here {
+  margin-right: 1.3rem;
+  width: 17rem;
+}
+
+.banner .start-here h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #444;
+}
+
+.banner .start-here p {
+  font-weight: 700;
+  line-height: 1.4;
+  padding: 1.25rem 0;
+  color: #444;
+}
+
+.banner .start-here a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.banner .start-here .button {
+  background-color: #444;
+  padding: 0.5rem 5.5rem;
+  width: 5.5rem;
+}
+
+.banner .start-here .button:hover {
+  background-color: #C20000;
+  transition: background-color 1s; 
+}
+
+/* mobile */
+
+@media only screen and (max-width: 480px) {
+
+  .banner {
+    flex-direction: column;
+  }
+  
+  .banner .image-container img {
+    display: none;
+  }
+  
+  .banner .image-container {
+    margin: 3.5rem 0 0 0;
+  }
+  
+  .banner .image-container-mobile img {
+    width: 26.66rem;
+  }
+  
+  .banner .start-here {
+    margin: 1.7rem 0.8rem;
+    width: 22rem;
+  }
+  
+  .banner .start-here p {
+    font-size: 1.25rem;
+  }
+  
+  .banner .start-here .button {
+    padding: 1rem 8.25rem;
+    margin-bottom: 1rem;
+  }
+  
+  .banner .start-here .button:hover {
+    background-color: #444; 
+  }
+  
+  .banner .start-here .button:active {
+    background-color: #C20000;
+    transition: background-color 0s;
+  }
+
+}
+
+@media only screen and (min-width: 480px) {
+
+  .banner .image-container-mobile img {
+    display: none;
+  }
+
+}
+
+/* main section */
+
+/* desktop */
+
+main {
+  display: flex;
+  background-color: #f3f4f5;
+}
+
+main .large-column {
+  margin: 1.7rem 1.3rem; 
+  width: 36.7rem;
+}
+
+main .large-column img {
+  width: 36.7rem;
+}
+
+main .large-column h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #444;
+  padding-top: 1.7rem;
+  padding-bottom: 0.75rem;
+}
+
+main .large-column q {
+  font-size: 0.8rem;
+  line-height: 1.2;
+  font-weight: 300;
+  color: #888;
+}
+
+main .large-column p {
+  font-size: 0.8rem;
+  color: #444;
+  padding-top: 2.15rem;
+}
+
+main .small-column {
+  display: flex;
+  flex-direction: column;
+  padding: 1.7rem 0;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  margin-right: 1.3rem;
+}
+
+main .small-column .orientation img {
+  float: left;
+  padding: 0 1.5rem 0.8rem 0.8rem;
+}
+
+main .small-column .campus img,
+main .small-column .lecture img {
+  float: left;
+  padding: 0.8rem 1.5rem 0.8rem 0.8rem;
+}
+
+main .small-column .orientation {
+  border-bottom: 0.5px solid #ccc;
+  width: 28rem;
+}
+
+main .small-column .orientation h3,
+main .small-column .campus h3,
+main .small-column .lecture h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #444;
+  padding-top: 2.5rem;
+}
+
+main .small-column .orientation p,
+main .small-column .campus p,
+main .small-column .lecture p {
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: #888;
+  padding: 0.75rem 1rem 0.75rem 0;
+}
+
+main .small-column .orientation a,
+main .small-column .campus a,
+main .small-column .lecture a {
+  font-size: 0.8rem;
+  color: #027CD1;
+  text-decoration: none;
+}
+
+main .small-column .campus {
+  border-top: 0.5px solid #ccc;
+  border-bottom: 0.5px solid #ccc;
+}
+
+main .small-column .lecture {
+  border-top: 0.5px solid #ccc; 
+}
+
+main .small-column .orientation:hover,
+main .small-column .campus:hover,
+main .small-column .lecture:hover {
+  background-color: #ddd;
+  transition: background-color 1.5s;
+}
+
+main .small-column .orientation a:hover,
+main .small-column .campus a:hover,
+main .small-column .lecture a:hover {
+  text-decoration: underline;
+}
+
+/* mobile */
+
+@media only screen and (max-width: 480px) {
+
+  main .large-column {
+    display: none;
+  }
+  
+  main .small-column .orientation:hover,
+  main .small-column .campus:hover,
+  main .small-column .lecture:hover {
+    background-color: #f3f4f5;
+  }
+  
+  main {
+    border-bottom: 1px solid #ccc;
+  }
+  
+  main .small-column {
+    margin: 0.88rem;
+    padding: 0;
+    border-left: 0px;
+    border-right: 0px;
+  }
+  
+  main .small-column .orientation img,
+  main .small-column .campus img,
+  main .small-column .lecture img {
+    display: none;
+  }
+  
+  main .small-column .orientation h3,
+  main .small-column .campus h3,
+  main .small-column .lecture h3 {
+    padding-left: 1.77rem;
+    padding-top: 1rem;
+  }
+  
+  main .small-column .orientation p,
+  main .small-column .campus p,
+  main .small-column .lecture p {
+    padding-left: 1.77rem;
+  }
+  
+  main .small-column .orientation a,
+  main .small-column .campus a,
+  main .small-column .lecture a {
+    padding-left: 1.77rem;
+  }
+  
+  main .small-column .orientation a:hover,
+  main .small-column .campus a:hover,
+  main .small-column .lecture a:hover {
+    text-decoration: none;
+  }
+  
+  main .small-column .orientation a:active,
+  main .small-column .campus a:active,
+  main .small-column .lecture a:active {
+  text-decoration: underline;
+}
+  
+  main .small-column .orientation,
+  main .small-column .campus,
+  main .small-column .lecture {
+    border-bottom: 0;
+    border-top: 0;
+    width: 24.9rem;
+    padding-bottom: 1rem;
+  }
+
+}
+
+@media only screen and (min-width: 480px) {
+
+  main .small-column .orientation-mobile img,
+  main .small-column .campus-mobile img,
+  main .small-column .lecture-mobile img {
+    display: none;
+  }
+
+}
+
+/* courses section */
+
+/* desktop */
+
+.courses {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ddd;
+}
+
+.courses h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #444;
+  text-align: center;
+  margin: 0 3.5rem;
+  padding: 1.7rem 0 1rem 0;
+  width: 60rem;
+}
+
+.courses .top-row,
+.courses .bottom-row {
+  display: flex;
+  margin: 0 3.5rem;
+  width: 60rem;
+}
+
+.courses .bottom-row {
+  margin-bottom: 1.7rem;
+}
+
+.courses .top-row .software-engineering,
+.courses .top-row .computer-art,
+.courses .top-row .design,
+.courses .bottom-row .data,
+.courses .bottom-row .business,
+.courses .bottom-row .marketing {
+  background-color: #fff;
+  width: 22rem;
+  margin: 0.8rem;
+  padding-bottom: 1rem;
+}
+
+.courses .top-row .software-engineering img,
+.courses .top-row .computer-art img,
+.courses .top-row .design img,
+.courses .bottom-row .data img,
+.courses .bottom-row .business img,
+.courses .bottom-row .marketing img {
+  width: 100%;
+}
+
+.courses .top-row .software-engineering h3,
+.courses .top-row .computer-art h3,
+.courses .top-row .design h3,
+.courses .bottom-row .data h3,
+.courses .bottom-row .business h3,
+.courses .bottom-row .marketing h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #444;
+  padding: 0.8rem;
+}
+
+.courses .top-row .software-engineering p,
+.courses .top-row .computer-art p,
+.courses .top-row .design p,
+.courses .bottom-row .data p,
+.courses .bottom-row .business p,
+.courses .bottom-row .marketing p {
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: #888;
+  padding: 0.4rem 0.8rem 0 0.8rem;
+}
+
+.courses .top-row .software-engineering a,
+.courses .top-row .computer-art a,
+.courses .top-row .design a,
+.courses .bottom-row .data a,
+.courses .bottom-row .business a,
+.courses .bottom-row .marketing a {
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: #888;
+  text-decoration: none;
+  padding-left: 0.8rem;
+}
+
+.courses .top-row .software-engineering span a,
+.courses .top-row .computer-art span a,
+.courses .top-row .design span a,
+.courses .bottom-row .data span a,
+.courses .bottom-row .business span a,
+.courses .bottom-row .marketing span a {
+  padding: 0;
+}
+
+.courses .top-row .software-engineering a:hover,
+.courses .top-row .computer-art a:hover,
+.courses .top-row .design a:hover,
+.courses .bottom-row .data a:hover,
+.courses .bottom-row .business a:hover,
+.courses .bottom-row .marketing a:hover {
+  color: #DC0000;
+  transition: color 1s;
+}
+
+.courses .top-row .software-engineering span a:hover,
+.courses .top-row .computer-art span a:hover,
+.courses .top-row .design span a:hover,
+.courses .bottom-row .data span a:hover,
+.courses .bottom-row .business span a:hover,
+.courses .bottom-row .marketing span a:hover {
+  opacity: 0.6;
+  transition: opacity 1.5s;
+}
+
+/* mobile */
+
+@media only screen and (max-width: 480px) {
+
+  .courses .top-row,
+  .courses .bottom-row {
+    display: none;
+  }
+  
+  .courses {
+    background-color: #f3f4f5;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 1.5rem;
+  }
+  
+  .courses h2 {
+    margin: 0;
+    padding-bottom: 1.2rem;
+    width: 100%;
+}
+
+  .software-engineering-mobile,
+  .computer-art-mobile,
+  .design-mobile,
+  .data-mobile,
+  .business-mobile,
+  .marketing-mobile {
+    background-color: #ddd;
+    margin: 0.22rem 0.88rem;
+    padding: 1.5rem 0.88rem;
+  }
+  
+  .software-engineering-mobile a,
+  .computer-art-mobile a,
+  .design-mobile a,
+  .data-mobile a,
+  .business-mobile a,
+  .marketing-mobile a {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #444;
+    text-decoration: none;
+  }
+  
+  .software-engineering-mobile a:active,
+  .computer-art-mobile a:active,
+  .design-mobile a:active,
+  .data-mobile a:active,
+  .business-mobile a:active,
+  .marketing-mobile a:active {
+    color: #DC0000;
+    transition: color 0s;
+  }
+
+}
+
+@media only screen and (min-width: 480px) {
+
+  .software-engineering-mobile,
+  .computer-art-mobile,
+  .design-mobile,
+  .data-mobile,
+  .business-mobile,
+  .marketing-mobile {
+    display: none;
+  }  
+
+}
+
+/* thesis section */
+
+/* desktop */
+
+.thesis-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f3f4f5;
+}
+
+.thesis-container h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #444;
+  text-align: center;
+  margin: 0 3.5rem;
+  padding: 1.7rem 0;
+  width: 60rem;
+}
+
+.thesis-container .thesis {
+  display: flex;
+}
+
+.thesis-container .thesis .large-column {
+  margin: 0 1.3rem 1.7rem 1.3rem; 
+  width: 36.7rem; 
+}
+
+.thesis-container .thesis .large-column h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #444;
+  padding: 0.8rem 0;
+}
+
+.thesis-container .thesis .large-column q {
+  font-size: 0.8rem;
+  line-height: 1.2;
+  font-weight: 300; 
+  color: #888;
+}
+
+.thesis-container .thesis .small-column {
+  display: flex;
+  flex-direction: column;
+  margin-right: 1.3rem;
+}
+
+.thesis-container .thesis .small-column .fisma,
+.thesis-container .thesis .small-column .nowandthen {
+  width: 28rem;
+}
+
+.thesis-container .thesis .small-column .fisma:hover,
+.thesis-container .thesis .small-column .nowandthen:hover {
+  background-color: #ddd;
+  transition: background-color 1.5s;
+}
+
+.thesis-container .thesis .small-column .fisma img,
+.thesis-container .thesis .small-column .nowandthen img {
+  float: left;
+  padding: 0.8rem 1.5rem 0.8rem 0.8rem;
+}
+
+.thesis-container .thesis .small-column .fisma h3,
+.thesis-container .thesis .small-column .nowandthen h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #444;
+  padding-top: 2.5rem;
+}
+
+.thesis-container .thesis .small-column .fisma p,
+.thesis-container .thesis .small-column .nowandthen p {
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: #888;
+  padding: 0.75rem 1rem 0.75rem 0;
+}
+
+/* mobile */
+
+@media only screen and (max-width: 480px) {
+
+  .thesis-container h2 {
+    width: 100%;
+    margin: 0;
+  }
+  
+  .thesis-container .thesis .small-column {
+    display: none;
+  }
+  
+  .thesis-container .thesis .large-column h3,
+  .thesis-container .thesis .large-column q {
+    display: none;
+  }
+  
+  .thesis-container .thesis .large-column-mobile {
+    margin: 0;
+  }
+  
+  .thesis-container .thesis .large-column {
+    display: none;
+  }
+  
+}
+
+@media only screen and (min-width: 480px) {
+
+  .thesis-container .thesis .large-column-mobile {
+    display: none;
+  }
+
+}
+
+/* footer section */
+
+/* desktop */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f3f4f5; 
+  border-top: 1px solid #ccc;
+  width: 100%;
+  height: 3.55rem;
+}
+
+footer .copyright p {
+  padding-left: 1.3rem;
+}
+
+footer .terms-privacy a {
+  text-decoration: none;
+  right: 1.3rem;
+  padding-left: 0.5rem;
+}
+
+footer .terms-privacy a:hover {
+  color: #DC0000;
+  transition: color 1s;
+}
+
+footer .copyright p,
+footer .terms-privacy a {
+  font-size: 0.66rem;
+  color: #888;
+  position: relative;
+  top: 0.8rem;
+}
+
+/* mobile */
+
+@media only screen and (max-width: 480px) {
+
+  footer {
+    height: 4.5rem;
+  }
+  
+  footer .copyright p {
+    padding-top: 2rem;
+  }
+
+  footer .terms-privacy {
+    display: none;
+  }
+
+}
